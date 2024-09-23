@@ -58,7 +58,7 @@
                         <div class="navbar-end">
                             <img src="assets/coin.png" alt="">
                             <div class="indicator">
-                                <div class="text-xs px-1 lg:px-2 lg:text-2xl">5500</div>
+                                <div id="nav-amount" class="text-xs px-1 lg:px-2 lg:text-2xl">5500</div>
                                 <div class="text-xs lg:text-2xl">BDT</div>
                             </div>
                         </div>
@@ -81,15 +81,15 @@
                   <div class="lg:w-full lg:h-full">
                     <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/5 ">
                         <img src="assets/coin.png" alt="">
-                        <p>0</p>
+                        <p id="donation-incriment1">0</p>
                         <p>BDT</p>
                     </div>
                     <h1 class=" text-xl lg:text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p class="py-6 text-xs lg:text-[14px] text-[rgba(17,17,17,0.7)] lg:leading-9">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
-                    <div class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
+                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
+                    <div id="donate-btn1" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
                   </div>
                 </div>
               </div>
@@ -102,15 +102,15 @@
                   <div class="lg:w-full lg:h-full">
                     <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/5 ">
                         <img src="assets/coin.png" alt="">
-                        <p>200</p>
+                        <p id="donation-incriment2">200</p>
                         <p>BDT</p>
                     </div>
                     <h1 class=" text-xl lg:text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
                     <p class="py-6 text-xs lg:text-[14px] text-[rgba(17,17,17,0.7)] lg:leading-9">
                         The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                     </p>
-                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
-                    <div class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
+                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
+                    <div id="donate-btn2" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
                   </div>
                 </div>
               </div>
@@ -123,22 +123,24 @@
                   <div class="lg:w-full lg:h-full">
                     <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/5 ">
                         <img src="assets/coin.png" alt="">
-                        <p>900</p>
+                        <p id="donation-incriment3">900</p>
                         <p>BDT</p>
                     </div>
                     <h1 class=" text-xl lg:text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
                     <p class="py-6 text-xs lg:text-[14px] text-[rgba(17,17,17,0.7)] lg:leading-9">
                         The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
-                    <div class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
+                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
+                    <div id="donate-btn3" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
                   </div>
                 </div>
               </div>
         </section>
- 
+
     </main>
     <footer></footer>
+    <script src="utilities.js"></script>
+    <script src="donation-calculation.js"></script>
 </body>
 
 </html>
