@@ -42,7 +42,7 @@
                         <div class="navbar-start">
                             <div class="dropdown">
                                 <div tabindex="0" role="button" class="btn btn-ghost bg-btn-background ">
-                                    <button class="text-xs  lg:text-xl rounded-md lg:px-4 lg:py-2">Home</button>
+                                    <button id="home-btn" class="text-xs  lg:text-xl rounded-md lg:px-4 lg:py-2">Home</button>
                                 </div>
                             </div>
                         </div>
@@ -66,13 +66,50 @@
     </header>
     <main>
         <div class="md:container mx-auto">
-            <h1 class="my-7 px-6 lg:text-5xl">Important FAQ</h1>
-            <!-- Accordion  -->
-            <div>
-
+            <h1 class="my-7 px-6 lg:px-0 lg:text-5xl lg:my-14">Important FAQ</h1>
+            <!-- Accordion Div -->
+            <div class="p-3 space-y-3 lg:p-0">
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" checked="checked" />
+                      <div class="collapse-title text-xl font-medium lg:py-11">What is the DOM in HTML?</div>
+                      <div class="collapse-content">
+                        <p>A programming interface for web pages.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium lg:py-11">How does the DOM relate to HTML?</div>
+                      <div class="collapse-content">
+                        <p>It represents HTML as a tree structure.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium lg:py-11">What is a DOM node?</div>
+                      <div class="collapse-content">
+                        <p>A part of the DOM, like elements or text.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium lg:py-11">How can you manipulate the DOM?</div>
+                      <div class="collapse-content">
+                        <p>Use JavaScript to modify elements or content.</p>
+                      </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                      <input type="radio" name="my-accordion-4" />
+                      <div class="collapse-title text-xl font-medium lg:py-11">Why is the DOM important?</div>
+                      <div class="collapse-content">
+                        <p>It enables dynamic, interactive web pages.</p>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </main>
     <footer></footer>
+    <script src="goto-home.js"></script>
 </body>
 </html>
