@@ -17,16 +17,38 @@ document.getElementById('donate-btn1').addEventListener('click', function () {
             document.getElementById('donation-incriment1').innerText = donationAmount;
             document.getElementById('nav-amount').innerText = mainAmountDecrees;
 
-            // Update the money first then shows alert otherwise without setTimeout function it shows alert first
-            setTimeout(function() {
-                alert('Congratulations! You have donated successfully.');
-            }, 100);
+
+            // Clears the input field
+            document.getElementById('input-donation-amount').value ='';
+
+                // Add to History
+                const currentDateTime = new Date().toLocaleString();
+                const div  = document.createElement('div');
+                div.classList.add('rounded-2xl','shadow','border-[rgba(17,17,17,0.3)]','p-6','mb-5','border-[0.1px]');
+                div.innerHTML =  `
+                    <p class="font-bold mb-4 text-lg lg:text-xl">${donationAmount} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+                    <p class="text-stone-500 text-[16px]">Date: ${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
+            `;
+            document.getElementById('historysection').appendChild(div);
+
+            // Show the modal 
+            const modal = document.getElementById('donation-modal');
+            modal.classList.remove('hidden'); 
+
+            // listener to close the modal
+            document.getElementById('close-confirmation').addEventListener('click', function () {
+                modal.classList.add('hidden');  
+            });
         }
     }
     else {
         alert('Please Enter a Integer number and try again');
     }
-})
+});
+
+
+
+
 
 
 // Feni Donation
@@ -45,17 +67,35 @@ document.getElementById('donate-btn2').addEventListener('click', function () {
         } else {
             document.getElementById('donation-incriment2').innerText = donationAmount1;
             document.getElementById('nav-amount').innerText = mainAmountDecrees1;
+              
+            // Clears the input field
+            document.getElementById('input-donation-amount1').value ='';
 
-            // Update the money first then shows alert otherwise without setTimeout function it shows alert first
-            setTimeout(function() {
-                alert('Congratulations! You have donated successfully.');
-            }, 100);
+             // Add to History
+             const currentDateTime = new Date().toLocaleString();
+             const div  = document.createElement('div');
+             div.classList.add('rounded-2xl','shadow','border-[rgba(17,17,17,0.3)]','p-6','mb-5','border-[0.1px]');
+             div.innerHTML =  `
+                 <p class="font-bold mb-4 text-lg lg:text-xl">${donationAmount1} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+                 <p class="text-stone-500 text-[16px]">Date: ${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
+         `;
+         document.getElementById('historysection').appendChild(div);
+
+
+            // Show the modal 
+            const modal = document.getElementById('donation-modal');
+            modal.classList.remove('hidden'); 
+
+            // listener to close the modal
+            document.getElementById('close-confirmation').addEventListener('click', function () {
+                modal.classList.add('hidden');  
+            });
         }
     }
     else {
         alert('Please Enter a Integer number and try again');
     }
-})
+});
 
 
 // Quota Movement Donation
@@ -75,14 +115,60 @@ document.getElementById('donate-btn3').addEventListener('click', function () {
         } else {
             document.getElementById('donation-incriment3').innerText = donationAmount2;
             document.getElementById('nav-amount').innerText = mainAmountDecrees2;
+   
+            // Clears the input field
+            document.getElementById('input-donation-amount2').value ='';  
+            
+             // Add to History
+             const currentDateTime = new Date().toLocaleString();
+             const div  = document.createElement('div');
+             div.classList.add('rounded-2xl','shadow','border-[rgba(17,17,17,0.3)]','p-6','mb-5','border-[0.1px]');
+             div.innerHTML =  `
+                 <p class="font-bold mb-4 text-lg lg:text-xl">${donationAmount2} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+                 <p class="text-stone-500 text-[16px]">Date: ${currentDateTime} GMT +0600 (Bangladesh Standard Time)</p>
+         `;
+         document.getElementById('historysection').appendChild(div);
 
-            // Update the money first then shows alert otherwise without setTimeout function it shows alert first
-            setTimeout(function() {
-                alert('Congratulations! You have donated successfully.');
-            }, 100);
+
+            // Show the modal 
+            const modal = document.getElementById('donation-modal');
+            modal.classList.remove('hidden'); 
+
+            // listener to close the modal
+            document.getElementById('close-confirmation').addEventListener('click', function () {
+                modal.classList.add('hidden');  
+            });
         }
     }
     else {
         alert('Please Enter a Integer number and try again');
     }
-})
+});
+
+
+// Donation Button Click and History Remove
+
+document.getElementById('donation-main-btn').addEventListener('click', function () {
+    document.getElementById('history-btn').style.background = 'white';
+    document.getElementById('donation-main-btn').style.background = 'rgb(180, 244, 97)';
+    console.log('clicked')
+    document.getElementById('NoakhaliSection').classList.remove('hidden');
+    document.getElementById('feniSection').classList.remove('hidden');
+    document.getElementById('cotaSection').classList.remove('hidden');
+    document.getElementById('donation-main-btn').classList.remove('border-[rgba(17,17,17,0.3)]');
+    document.getElementById('history-btn').classList.add('border-[rgba(17,17,17,0.3)]');
+
+    document.getElementById('historysection').classList.add('hidden');
+});
+
+// History Button Click and Donation Remove
+document.getElementById('history-btn').addEventListener('click', function () {
+    document.getElementById('donation-main-btn').style.background = 'white';
+    document.getElementById('history-btn').style.background = 'rgb(180, 244, 97)';
+    document.getElementById('NoakhaliSection').classList.add('hidden');
+    document.getElementById('feniSection').classList.add('hidden');
+    document.getElementById('cotaSection').classList.add('hidden');
+    document.getElementById('historysection').classList.remove('hidden');
+    document.getElementById('donation-main-btn').classList.add('border-[rgba(17,17,17,0.3)]');
+    document.getElementById('history-btn').classList.remove('border-[rgba(17,17,17,0.3)]');
+});
