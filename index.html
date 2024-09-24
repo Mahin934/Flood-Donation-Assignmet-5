@@ -45,7 +45,7 @@
                         <div class="navbar-start">
                             <div class="dropdown">
                                 <div tabindex="0" role="button" class="btn btn-ghost bg-btn-background ">
-                                    <button id="blog-btn1" class="text-xs  lg:text-xl rounded-md lg:px-4 lg:py-2"><a href="blog.html">Blog</a></button>
+                                    <a id="blog-btn1" class="text-xs  lg:text-xl rounded-md lg:px-4 lg:py-2" href="blog.html">Blog</a> 
                                 </div>
                             </div>
                         </div>
@@ -68,75 +68,100 @@
         </div>
         <!-- Header Button Div -->
         <div class="md:container bg-white mx-auto text-center pb-3 pt-11 lg:pt-20 lg:pb-5" >
-            <button class="text-xs mr-7 btn btn-ghost  bg-btn-background  lg:text-xl rounded-md lg:px-6 lg:py-2 ">Donation</button>
-            <button class="text-xs btn btn-ghost  border-[rgba(17,17,17,0.3)]  lg:text-xl rounded-md lg:px-6 lg:py-2">History</button>
+            <button id="donation-main-btn" class="text-xs mr-7 btn btn-ghost   bg-btn-background  lg:text-xl rounded-md lg:px-6 lg:py-2 ">Donation</button>
+            <button id="history-btn" class="text-xs btn btn-ghost  border-[rgba(17,17,17,0.3)]  lg:text-xl rounded-md lg:px-6 lg:py-2">History</button>
         </div>
     </header>
     <main class="md:container mx-auto pt-48 lg:pt-72">
         <!-- Section-1 -->
-        <section class="lg:flex lg:justify-center">
-            <div class="m-3">
-                <div class="hero bg-white p-4 shadow rounded-2xl  hero-content flex-col lg:flex-row lg:space-x-6  lg:p-6 lg:h-full">
-                  <div  class="w-fit lg:w-full"><img src="assets/noakhali.png" class="rounded-lg lg:w-[596px]" /></div>
+        <section class="lg:flex lg:justify-center ">
+            <div id="NoakhaliSection"  class="m-3">
+                <div class="hero bg-white p-4 shadow rounded-2xl  hero-content flex-col lg:flex-row lg:space-x-6  lg:p-6 lg:h-full lg:
+                max-w-full">
+                  <div  class="w-fit lg:w-full"><img src="assets/noakhali.png" class="rounded-lg lg:w-[712px]" /></div>
                   <div class="lg:w-full lg:h-full">
-                    <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/5 ">
+                    <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/4 lg:py-3">
                         <img src="assets/coin.png" alt="">
-                        <p id="donation-incriment1">0</p>
-                        <p>BDT</p>
+                        <p id="donation-incriment1" class="lg:text-xl">0</p>
+                        <p class="lg:text-xl">BDT</p>
                     </div>
-                    <h1 class=" text-xl lg:text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="py-6 text-xs lg:text-[14px] text-[rgba(17,17,17,0.7)] lg:leading-9">
+                    <h1 class=" text-xl lg:text-3xl font-bold lg:pt-3">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="py-6 text-xs lg:text-[18px] text-[rgba(17,17,17,0.7)] lg:leading-9">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
-                    <div id="donate-btn1" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
+                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full lg:h-16 lg:text-xl"/></div>
+                    <div id="donate-btn1" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl lg:h-16">Donate Now</button></div>
                   </div>
                 </div>
               </div>
         </section>
         <!-- Section-2 -->
         <section class="lg:flex lg:justify-center">
-            <div class="m-3">
-                <div class="hero bg-white p-4 shadow rounded-2xl  hero-content flex-col lg:flex-row lg:space-x-6  lg:p-6 lg:h-full">
-                  <div  class="w-fit lg:w-full"><img src="assets/feni.png" class="rounded-lg lg:w-[596px]" /></div>
+            <div id="feniSection"  class="m-3">
+                <div class="hero bg-white p-4 shadow rounded-2xl  hero-content flex-col lg:flex-row lg:space-x-6  lg:p-6 lg:h-full lg:
+                max-w-full">
+                  <div  class="w-fit lg:w-full"><img src="assets/feni.png" class="rounded-lg lg:w-[712px]" /></div>
                   <div class="lg:w-full lg:h-full">
-                    <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/5 ">
+                    <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/4 lg:py-3">
                         <img src="assets/coin.png" alt="">
-                        <p id="donation-incriment2">200</p>
-                        <p>BDT</p>
+                        <p id="donation-incriment2" class="lg:text-xl">200</p>
+                        <p class="lg:text-xl">BDT</p>
                     </div>
-                    <h1 class=" text-xl lg:text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
-                    <p class="py-6 text-xs lg:text-[14px] text-[rgba(17,17,17,0.7)] lg:leading-9">
+                    <h1 class=" text-xl lg:text-3xl font-bold lg:pt-3">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="py-6 text-xs lg:text-[18px] text-[rgba(17,17,17,0.7)] lg:leading-9">
                         The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                     </p>
-                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
-                    <div id="donate-btn2" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
+                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount1" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full lg:h-16 lg:text-xl"/></div>
+                    <div id="donate-btn2" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl lg:h-16">Donate Now</button></div>
                   </div>
                 </div>
               </div>
         </section>
         <!-- Section-3 -->
-        <section class="lg:flex lg:justify-center">
-            <div class="m-3">
-                <div class="hero bg-white p-4 shadow rounded-2xl  hero-content flex-col lg:flex-row lg:space-x-6  lg:p-6 lg:h-full">
-                  <div  class="w-fit lg:w-full"><img src="assets/quota-protest.png" class="rounded-lg lg:w-[596px]" /></div>
+        <section  class="lg:flex lg:justify-center">
+            <div id="cotaSection" class="m-3">
+                <div class="hero bg-white p-4 shadow rounded-2xl  hero-content flex-col lg:flex-row lg:space-x-6  lg:p-6 lg:h-full lg:
+                max-w-full">
+                  <div  class="w-fit lg:w-full"><img src="assets/quota-protest.png" class="rounded-lg lg:w-[712px]" /></div>
                   <div class="lg:w-full lg:h-full">
-                    <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/5 ">
+                    <div class="flex items-center gap-2 bg-[rgba(17,17,17,0.05)] w-1/3 p-1 justify-center rounded-md mb-4 lg:w-1/4 lg:py-3">
                         <img src="assets/coin.png" alt="">
-                        <p id="donation-incriment3">900</p>
-                        <p>BDT</p>
+                        <p id="donation-incriment3" class="lg:text-xl">900</p>
+                        <p class="lg:text-xl">BDT</p>
                     </div>
-                    <h1 class=" text-xl lg:text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
-                    <p class="py-6 text-xs lg:text-[14px] text-[rgba(17,17,17,0.7)] lg:leading-9">
+                    <h1 class=" text-xl lg:text-3xl font-bold lg:pt-3">Aid for Injured in the Quota Movement</h1>
+                    <p class="py-6 text-xs lg:text-[18px] text-[rgba(17,17,17,0.7)] lg:leading-9">
                         The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                     </p>
-                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full "/></div>
-                    <div id="donate-btn3" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl">Donate Now</button></div>
+                    <div class="text-center lg:text-start lg:w-full lg:mt-7"><input id="input-donation-amount2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full lg:h-16 lg:text-xl"/></div>
+                    <div id="donate-btn3" class="text-center mt-3 lg:mt-8"><button class="btn  bg-btn-background lg:w-full lg:text-xl lg:h-16">Donate Now</button></div>
                   </div>
                 </div>
               </div>
         </section>
+        <!-- Congratulations Card -->
+        <section>
+            <div id="donation-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center p-5 lg:p-0 justify-center hidden">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+                    <h2 class="text-xl lg:text-2xl font-bold mb-4">Congrats!</h2>
+                    <div class="flex justify-center mb-4">
+                        <!-- Replace with the path to your icon -->
+                        <img src="assets/coin.png" alt="icon" class="w-12 h-12">
+                    </div>
+                    <p class="text-xs lg:text-lg">You Have Donated for Humankind</p>
+                    <h3 class="text-lg lg:text-xl font-semibold text-green-500 mt-2">Successfully</h3>
+                    <button id="close-confirmation" class="mt-3 lg:mt-6 bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300">
+                        Close Confirmation
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- History Section -->
+        <section >
+           <div id="historysection" class="hidden p-2 lg:p-0">
 
+           </div>
+        </section>
     </main>
     <footer>
         <div class="w-full bg-[rgb(249,247,243)] pb-8 mt-8 lg:pb-44">
